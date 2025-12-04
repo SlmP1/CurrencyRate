@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
  
 [[headers]]
@@ -11,3 +11,8 @@
   for = "*.js"
   [headers.values]
     Content-Type = "text/javascript; charset=utf-8"
+ 
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
